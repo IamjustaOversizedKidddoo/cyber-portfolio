@@ -98,7 +98,7 @@ export interface OperationArchitectureNode {
 export interface OperationData {
   id: string;
   anchorId: string;
-  shortcutKey: "J" | "S";
+  shortcutKey: "C" | "J" | "S";
   num: string;
   codename: string;
   name: string;
@@ -134,7 +134,7 @@ export interface Capability {
   technologies: string[];
 }
 
-export type FieldProjectCategory = "RED TEAM" | "BLUE TEAM";
+export type FieldProjectCategory = "RED TEAM" | "VAPT" | "BLUE TEAM";
 
 export interface ProjectCaseFile {
   id: string;
@@ -156,6 +156,24 @@ export interface ProjectCaseFile {
   featured?: boolean;
 }
 
+export interface ExperienceRecord {
+  id: string;
+  role: string;
+  organization: string;
+  period: string;
+  duration: string;
+  location: string;
+  type: "INTERNSHIP" | "CONTRACT" | "FULL-TIME";
+  status: "COMPLETED" | "ACTIVE";
+  classification: string;
+  summary: string;
+  responsibilities: string[];
+  keyVulnerabilities: string[];
+  methodologies: string[];
+  tools: string[];
+  verificationStamp?: string;
+  credentialRef?: string;
+}
 
 export type CredentialStatus = "VERIFIED" | "TRAINING" | "IN PROGRESS";
 
@@ -193,6 +211,7 @@ export interface DossierData {
   evolution: TechnicalEvolutionStage[];
   capabilityDomains: CapabilityDomain[];
   flagshipOperations: OperationData[];
+  experiences: ExperienceRecord[];
   credentials: Credential[];
   contact: ContactConfig;
   systems: SystemStatus[];

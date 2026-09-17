@@ -3,55 +3,55 @@ import type { DossierData } from "../types/dossier";
 export const DOSSIER_DATA: DossierData = {
   identity: {
     name: "AYAN ABBAS",
-    title: "RED TEAM × BLUE TEAM SECURITY",
-    positioning: "OFFENSE × DEFENSE × DETECTION × AUTOMATION",
-    pillars: ["OFFENSE", "DEFENSE", "DETECTION", "AUTOMATION"],
+    title: "RED TEAM OPERATIVE & ETHICAL HACKER",
+    positioning: "VAPT × ETHICAL HACKING × RED TEAM × CODE INTELLIGENCE",
+    pillars: ["RED TEAM", "VAPT", "ETHICAL HACKING", "CODE INTELLIGENCE"],
     location: "LUCKNOW, IN",
     node: "LKO-IN",
     status: "ACTIVE",
-    operativesCount: 2,
+    operativesCount: 3,
     clearanceLevel: "LEVEL-05 // RECRUITER ACCESS",
     narrativeSummary: [
-      "I analyze digital systems, evaluate attack surfaces, and build security-focused tools.",
-      "My work focuses on Red Team offensive mechanics, Blue Team defensive operations, application & identity security, and AI-assisted security automation. I operate at the intersection of threat detection, threat hunting, and security operations.",
-      "I seek to understand software both when it operates normally and when subjected to adversarial exploitation — building resilient defenses and automated operational capabilities."
+      "I analyze digital systems from an adversarial perspective, conduct in-depth vulnerability assessments and penetration testing (VAPT), and build offensive and investigative security platforms.",
+      "My work focuses on Red Team attack mechanics, ethical hacking, OWASP Top 10 vulnerabilities, API security boundaries, and code-level security intelligence. I completed a hands-on VAPT internship at TriosCyber testing client targets and engineered CODE NOIR, an AI-powered codebase investigation platform.",
+      "By combining manual penetration testing methodologies with deterministic code intelligence, I uncover critical attack surfaces, eliminate false positives, and guide engineering teams toward resilient mitigations before adversaries strike."
     ]
   },
   profileScan: [
     {
-      id: "ps-eng",
+      id: "ps-vapt",
+      label: "VAPT INTERN",
+      value: "TRIOSCYBER ENGAGEMENT",
+      status: "VERIFIED",
+      detail: "Web & Network Pentesting, OWASP Top 10, PoC Verification"
+    },
+    {
+      id: "ps-red",
       label: "OFFENSIVE SEC",
-      value: "RED TEAM / VULNERABILITY ANALYSIS",
+      value: "RED TEAM & ETHICAL HACKING",
       status: "ACTIVE",
-      detail: "Web Vulnerability Analysis, OWASP Top 10 & Recon"
+      detail: "Adversary TTPs, BOLA/BFLA, Auth Flaws & Exploit Analysis"
     },
     {
-      id: "ps-sec",
-      label: "DEFENSIVE SEC",
-      value: "BLUE TEAM / THREAT SURFACE & SOC",
+      id: "ps-noir",
+      label: "CODE INTELLIGENCE",
+      value: "CODE NOIR PLATFORM",
       status: "ACTIVE",
-      detail: "SIEM Telemetry, Incident Triage, Threat Hunting & Hardening"
+      detail: "AST & Symbol Analysis, Security Findings, Detective Desk"
     },
     {
-      id: "ps-ai",
-      label: "AI SECURITY",
-      value: "02 ACTIVE OPERATIVES",
-      status: "ACTIVE",
-      detail: "JARVIS (Agentic Automation) & SENTINEL (AI SOC)"
-    },
-    {
-      id: "ps-dep",
+      id: "ps-ops",
       label: "DEPLOYMENTS",
-      value: "FIELD CASE FILES & UTILITIES",
-      status: "DOCUMENTED",
-      detail: "Security Tooling, SOC Telemetry & Secondary Deployments"
+      value: "03 ACTIVE OPERATIVES",
+      status: "ACTIVE",
+      detail: "CODE NOIR (SAST/Intelligence), SENTINEL (SOC), JARVIS (Agents)"
     },
     {
       id: "ps-syn",
       label: "PROFILE SYNTHESIS",
       value: "AUTHENTICATED & ACCESSIBLE",
       status: "COMPLETE",
-      detail: "System Access Granted for Recruiter Investigation"
+      detail: "System Access Granted for Recruiter & Technical Evaluation"
     }
   ],
   evolution: [
@@ -61,354 +61,323 @@ export const DOSSIER_DATA: DossierData = {
       title: "THE BUILDER",
       period: "FOUNDATION",
       category: "BUILD",
-      description: "Full-stack development as the engineering foundation — constructing interfaces, applications, and digital products.",
+      description: "Full-stack development as the engineering foundation — constructing interfaces, applications, APIs, and digital products.",
       narrative: [
-        "I started by building systems.",
-        "Interfaces.",
-        "Applications.",
-        "Digital products.",
-        "The first goal was simple: make the system work."
+        "I started by building systems from the ground up.",
+        "Component trees, state machines, REST APIs, database schemas.",
+        "Understanding how software is constructed is the prerequisite to understanding how it collapses."
       ],
-      highlights: ["DOM Mechanics & UI Architecture", "Modern JavaScript & TypeScript", "Full-Stack System Engineering"],
-      technologies: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Node.js"]
+      highlights: ["DOM Mechanics & UI Architecture", "Modern TypeScript, Node.js & React", "Full-Stack System Engineering"],
+      technologies: ["TypeScript", "React", "Node.js", "Express", "REST APIs", "PostgreSQL"]
     },
     {
       id: "evo-question",
       step: "02",
-      title: "THE QUESTION",
+      title: "THE OFFENSIVE SHIFT",
       period: "TURNING POINT",
       category: "SECURITY",
       turningPoint: true,
-      description: "The narrative turning point — shifting focus from system construction to adversarial security inquiry.",
+      description: "The pivotal mindset transition — shifting focus from system construction to adversarial security inquiry.",
       narrative: [
-        "Then the question changed.",
-        "Not just: How do I build this?",
-        "But: What happens when someone tries to break it?"
+        "Then the fundamental question changed.",
+        "Not just: How do I make this feature work?",
+        "But: What happens when an adversary injects unexpected input? Where are the implicit trusts?"
       ],
-      highlights: ["Shift from Construction to Security Inquiry", "Evaluating Boundary Assumptions", "Questioning Implicit System Trust"],
-      technologies: ["System Architecture", "Boundary Inspection", "Attack Surface Analysis"]
+      highlights: ["Shift from Construction to Adversarial Inquiry", "Evaluating Boundary Assumptions", "Questioning Implicit System Trust"],
+      technologies: ["Attack Surface Mapping", "Boundary Inspection", "Threat Modeling", "HTTP Internals"]
     },
     {
       id: "evo-break",
       step: "03",
-      title: "THE BREAK",
+      title: "ETHICAL HACKING LABS",
       period: "SECURITY RESEARCH",
       category: "SECURITY",
-      description: "Examining application security, exposed attack surfaces, API boundaries, and network behavior in controlled labs.",
+      description: "Examining application security, exposed attack surfaces, API boundaries, and network behavior in dedicated offensive labs.",
       narrative: [
-        "I started looking at systems from the other side.",
-        "Where are the assumptions?",
-        "Where are the weak boundaries?",
-        "What happens when the system receives something it was never designed to handle?"
+        "I began systematically breaking applications in controlled test beds.",
+        "Testing authentication boundaries, tracing parameter handling, and intercepting API traffic.",
+        "Mastering the attacker's toolkit from Burp Suite to protocol fuzzers."
       ],
       highlights: ["Application Security Research", "API Boundary & Auth Vulnerabilities", "Controlled Security Lab Experimentation"],
-      technologies: ["Burp Suite", "OWASP Top 10", "HTTP Telemetry", "API Security", "Network Recon"]
+      technologies: ["Burp Suite Pro", "OWASP Top 10", "HTTP Fuzzing", "API Security", "Nmap Recon"]
     },
     {
-      id: "evo-defender",
+      id: "evo-trioscyber",
       step: "04",
-      title: "THE DEFENDER",
-      period: "BLUE TEAM / SOC",
+      title: "TRIOSCYBER FIELD VAPT",
+      period: "INDUSTRIAL INTERNSHIP",
       category: "OPERATIONS",
-      description: "Transitioning from vulnerability discovery to detection engineering, SIEM log telemetry inspection, and incident analysis.",
+      description: "One-month intensive industrial VAPT internship at TriosCyber executing vulnerability assessments and penetration testing.",
       narrative: [
-        "But finding a weakness is only half the problem.",
-        "The next question was harder:",
-        "Would the defender see it?"
+        "Stepped out of synthetic labs into real-world client environments at TriosCyber.",
+        "Conducted black-box and grey-box penetration testing on production-grade web apps and network infrastructure.",
+        "Crafted custom Proof-of-Concept exploits to eliminate false positives and authored remediation blueprints for engineering leads."
       ],
-      highlights: ["Transition: ATTACK → DETECT", "SIEM Telemetry & Log Triage", "Incident Analysis & System Hardening"],
-      technologies: ["SIEM Telemetry", "Log Analysis", "Threat Triage", "Incident Response", "System Hardening"]
+      highlights: ["1-Month VAPT Internship at TriosCyber (01 Sept – 01 Oct)", "Web & Network Pentesting (OWASP Top 10 & WSTG)", "CVSS v3.1 Scoring & Remediation Reports"],
+      technologies: ["TriosCyber Engagements", "Burp Suite", "Nessus", "Nmap", "CVSS v3.1", "OWASP WSTG", "Client Reporting"]
     },
     {
       id: "evo-adversary",
       step: "05",
-      title: "THE ADVERSARY",
+      title: "THE RED TEAM ADVERSARY",
       period: "RED TEAM LABS",
       category: "SECURITY",
-      description: "Researching adversary tactics, authentication failure modes, and attack pathways across dedicated security research labs.",
+      description: "Deepening offensive tradecraft — researching adversary tactics, token manipulation, race conditions, and attack chain exploitation.",
       narrative: [
-        "To understand a defense, I needed to understand the attack.",
-        "How authentication fails.",
-        "How trust gets abused.",
-        "How small weaknesses become attack paths."
+        "To think like an adversary, I studied advanced offensive vectors.",
+        "Manipulating cryptographic claims in JWTs, triggering concurrency race windows, and chaining multiple low-severity issues into full system takeover."
       ],
       highlights: [
-        "API ATTACK LAB: Auth & BOLA Vulnerability Research",
-        "TOKEN ABUSE LAB: JWT Forensics & Session Abuse",
-        "SUPPLY CHAIN ATTACK LAB: Dependency Integrity & SBOM",
-        "RACE CONDITION LAB: TOCTOU & Concurrency Flaws"
+        "API ATTACK LAB: Auth & BOLA Vulnerability Exploitation",
+        "TOKEN ABUSE LAB: JWT Signature Bypasses & Session Hijacking",
+        "RACE CONDITION LAB: TOCTOU & Concurrency Flaws",
+        "SUPPLY CHAIN LAB: Malicious Package Vectors & SBOM Auditing"
       ],
-      technologies: ["Red Team Labs", "JWT Security", "OWASP API Top 10", "SBOM Integrity", "Concurrency Flaws"]
+      technologies: ["Red Team TTPs", "JWT Security", "BOLA / BFLA", "Race Conditions", "OWASP API Top 10", "MITRE ATT&CK"]
     },
     {
-      id: "evo-defenders-view",
+      id: "evo-codenoir",
       step: "06",
-      title: "THE DEFENDER'S VIEW",
-      period: "DETECTION ENGINEERING",
-      category: "OPERATIONS",
-      description: "Analyzing telemetry signals, indicators of compromise, and behavioral evidence left behind across defensive Blue Team projects.",
+      title: "CODE INTELLIGENCE ARCHITECT",
+      period: "SECURITY SAST & AST",
+      category: "AI",
+      description: "Building CODE NOIR — an AI-powered codebase investigation and security platform grounded in deterministic code facts.",
       narrative: [
-        "An attack is only useful to study if you can understand what it leaves behind.",
-        "Signals.",
-        "Logs.",
-        "Behavior.",
-        "Indicators.",
-        "That is where detection begins."
+        "Recognized that codebases conceal critical security relationships beneath thousands of files.",
+        "Engineered CODE NOIR to ingest repositories, parse ASTs, build call graphs, identify auth boundaries, and empower investigators through conversational AI."
       ],
       highlights: [
-        "AI THREAT DETECTION: Telemetry Anomaly Engine",
-        "HONEYPOT INTELLIGENCE: Deception & IOC Capture",
-        "eBPF THREAT TRACER: Kernel Syscall Observability",
-        "CYBER THREAT SITUATION ROOM: Threat Feed Correlation"
+        "CODE NOIR: Deterministic Code Intelligence + Security Findings",
+        "Visual Crime Scene Call & Dependency Graph",
+        "Evidence Locker & Automated Security Auditing"
       ],
-      technologies: ["Detection Engineering", "eBPF Syscall Tracing", "Honeypots", "ML Threat Detection", "MITRE ATT&CK"]
+      technologies: ["CODE NOIR Platform", "AST Parsing", "Static Security Analysis", "Next.js", "Prisma", "AI Reasoning"]
     },
     {
       id: "evo-system-builder",
       step: "07",
-      title: "THE SYSTEM BUILDER",
-      period: "AI & SECURITY SYSTEMS",
+      title: "AUTONOMOUS SECURITY SYSTEMS",
+      period: "SECURITY AUTOMATION",
       category: "AI",
-      description: "Culmination of the journey — engineering intelligent systems designed for security automation and threat investigation.",
+      description: "Engineering intelligent offensive & defensive systems for automated triage, telemetry correlation, and operational speed.",
       narrative: [
-        "Eventually, security became less about one tool and more about building systems around the problem.",
-        "One system to act.",
-        "One system to investigate."
+        "Bridging offensive insights with automated tooling.",
+        "Deploying SENTINEL for AI SOC telemetry correlation and JARVIS for multi-model developer task orchestration."
       ],
       highlights: [
-        "JARVIS → Agentic Automation & Task Execution Operative",
-        "SENTINEL → AI SOC Analyst & Threat Triage Platform",
-        "Autonomous System Security Architecture"
+        "SENTINEL → AI SOC Analyst & Threat Correlation Engine",
+        "JARVIS → Agentic Automation & Task Execution Bridge",
+        "Autonomous Multi-LLM Security Workflows"
       ],
-      technologies: ["JARVIS Platform", "SENTINEL SOC", "Autonomous Agent Loops", "Multi-LLM Routing", "Security Automation"]
+      technologies: ["SENTINEL SOC", "JARVIS System", "Telemetry Pipelines", "Multi-LLM Routing", "Tool Calling"]
     }
   ],
   capabilityDomains: [
     {
       id: "dom-attack",
       num: "01",
-      name: "RED TEAM / OFFENSIVE SECURITY",
+      name: "RED TEAM & ADVERSARY EMULATION",
       category: "ATTACK",
-      subtitle: "ATTACK SURFACE & VULNERABILITY ANALYSIS",
-      summary: "Studying adversary techniques, web vulnerability mechanisms, authentication flaws, and reconnaissance to evaluate software resilience.",
+      subtitle: "EXPLOIT MECHANICS, ATTACK CHAINS & ADVERSARY TTPS",
+      summary: "Simulating adversary behavior, mapping complex attack pathways, weaponizing boundary flaws, and analyzing system resilience against targeted breaches.",
       accentColor: "var(--color-threat)",
-      quickSummary: ["OWASP Top 10", "Web Vulnerabilities", "Network Recon", "Attack Surface Mapping", "Burp Suite"],
+      quickSummary: ["Adversary TTPs", "Broken Access Control", "JWT Exploits", "Privilege Escalation", "Race Conditions"],
       items: [
         {
-          id: "cap-owasp",
-          name: "Web Application Vulnerability Analysis",
-          categoryTag: "WEB SECURITY",
-          state: "PRACTICED",
-          description: "Analyzing OWASP Top 10 security risks including SQL Injection, Cross-Site Scripting (XSS), CSRF, and Broken Access Control.",
-          evidenceLabel: "SECURITY EXPLORATION",
-          evidenceAnchor: "identity",
-          tools: ["OWASP Top 10", "Burp Suite Basics", "Web Vulnerabilities", "HTTP Inspection"]
+          id: "cap-redteam-ttps",
+          name: "Adversary TTPs & MITRE ATT&CK Mapping",
+          categoryTag: "RED TEAM",
+          state: "DEPLOYED",
+          description: "Analyzing threat actor tactics, techniques, and procedures (TTPs) and correlating offensive attack paths to the MITRE ATT&CK enterprise framework.",
+          evidenceLabel: "OFFENSIVE RESEARCH",
+          evidenceAnchor: "operations",
+          tools: ["MITRE ATT&CK", "Adversary TTPs", "Attack Chain Modeling", "Threat Emulation"]
         },
         {
-          id: "cap-recon",
-          name: "Network & Endpoint Reconnaissance",
+          id: "cap-auth-exploit",
+          name: "Broken Authentication & Token Abuse",
+          categoryTag: "EXPLOITATION",
+          state: "PRACTICED",
+          description: "Auditing and exploiting authentication mechanisms, JWT header manipulation (algorithm confusion, key confusion), and session hijacking vectors.",
+          evidenceLabel: "TOKEN ABUSE LAB",
+          evidenceAnchor: "field-operations",
+          tools: ["JWT Forensics", "OAuth 2.0 Audits", "Session Fixation", "Signature Bypasses"]
+        },
+        {
+          id: "cap-race-toctou",
+          name: "Concurrency Flaws & Race Conditions",
+          categoryTag: "ADVANCED ATTACK",
+          state: "PRACTICED",
+          description: "Generating parallel asynchronous HTTP/2 streams to detect Time-of-Check to Time-of-Use (TOCTOU) flaws, double-spend vulnerabilities, and limit bypasses.",
+          evidenceLabel: "RACE CONDITION LAB",
+          evidenceAnchor: "field-operations",
+          tools: ["HTTP/2 Turbo Streams", "TOCTOU Flaws", "Python Asyncio", "Concurrency Testing"]
+        },
+        {
+          id: "cap-recon-active",
+          name: "Network & Endpoint Attack Surface Recon",
           categoryTag: "RECON",
-          state: "WORKING KNOWLEDGE",
-          description: "Conducting port scans, network service discovery, protocol header inspection, and domain enumeration.",
-          evidenceLabel: "TECHNICAL EVOLUTION",
-          evidenceAnchor: "identity",
-          tools: ["Port Scanning", "Service Enumeration", "DNS Lookup", "Protocol Header Analysis"]
-        },
-        {
-          id: "cap-surface",
-          name: "Attack Surface & Boundary Assessment",
-          categoryTag: "ASSESSMENT",
           state: "PRACTICED",
-          description: "Mapping exposed application endpoints, API routes, and third-party integrations to minimize attack vectors.",
-          evidenceLabel: "IDENTITY CHAPTER",
-          evidenceAnchor: "identity",
-          tools: ["API Boundary Audit", "Endpoint Mapping", "Privilege Review"]
+          description: "Executing active service fingerprinting, sub-domain brute-forcing, perimeter enumeration, and exposed port vulnerability scanning.",
+          evidenceLabel: "TRIOSCYBER ENGAGEMENT",
+          evidenceAnchor: "experience",
+          tools: ["Nmap", "Burp Suite Pro", "DNS Enumeration", "Protocol Analysis"]
+        }
+      ]
+    },
+    {
+      id: "dom-vapt",
+      num: "02",
+      name: "VULNERABILITY ASSESSMENT & PENETRATION TESTING",
+      category: "ATTACK",
+      subtitle: "SYSTEMATIC METHODOLOGIES, TESTING & AUDIT REPORTING",
+      summary: "Industry-standard VAPT methodologies applied to web applications, APIs, and network perimeters with manual PoC exploit validation and CVSS scoring.",
+      accentColor: "var(--color-threat)",
+      quickSummary: ["OWASP Top 10", "WSTG Methodology", "Nessus & Burp Pro", "PoC Exploit Scripts", "CVSS v3.1 Scoring"],
+      items: [
+        {
+          id: "cap-owasp-top10",
+          name: "Web Application Pentesting (OWASP Top 10)",
+          categoryTag: "WEB VAPT",
+          state: "DEPLOYED",
+          description: "Systematic auditing for injection (SQLi, NoSQLi, Command Injection), Cross-Site Scripting (XSS), CSRF, SSRF, and security misconfigurations.",
+          evidenceLabel: "TRIOSCYBER VAPT INTERNSHIP",
+          evidenceAnchor: "experience",
+          tools: ["OWASP Top 10", "OWASP WSTG", "Burp Suite Pro", "SQLMap", "PayloadsAllTheThings"]
         },
         {
-          id: "cap-offensive-study",
-          name: "Offensive Security & Red Team Concepts",
-          categoryTag: "OFFENSIVE",
-          state: "LEARNING",
-          description: "Active study of adversary tactics, exploit mechanics, and payload execution pathways to enhance defensive engineering.",
-          evidenceLabel: "TECHNICAL PROGRESSION",
-          evidenceAnchor: "identity",
-          tools: ["Adversary TTPs", "Payload Analysis", "Boundary Testing"]
+          id: "cap-api-vapt",
+          name: "API Vulnerability Assessment (OWASP API Top 10)",
+          categoryTag: "API VAPT",
+          state: "DEPLOYED",
+          description: "Evaluating RESTful & GraphQL endpoints for Broken Object Level Authorization (BOLA), Broken Function Level Authorization (BFLA), and rate-limit bypasses.",
+          evidenceLabel: "API ATTACK LAB",
+          evidenceAnchor: "field-operations",
+          tools: ["OWASP API Top 10", "Postman", "Burp Repeater / Intruder", "Fuzzing Engine"]
+        },
+        {
+          id: "cap-poc-validation",
+          name: "Manual PoC Verification & False Positive Filtering",
+          categoryTag: "VALIDATION",
+          state: "DEPLOYED",
+          description: "Crafting customized Proof-of-Concept (PoC) exploits in Python and Bash to verify automated scanner findings and eliminate false positives.",
+          evidenceLabel: "TRIOSCYBER VAPT ENGAGEMENT",
+          evidenceAnchor: "experience",
+          tools: ["Python Exploit Scripts", "cURL", "Bash Automation", "Manual Verification"]
+        },
+        {
+          id: "cap-vapt-reporting",
+          name: "CVSS v3.1 Scoring & Remediation Advising",
+          categoryTag: "REPORTING",
+          state: "DEPLOYED",
+          description: "Calculating standardized CVSS v3.1 severity metrics and authoring executive summaries and developer remediation roadmaps.",
+          evidenceLabel: "TRIOSCYBER AUDIT DELIVERABLE",
+          evidenceAnchor: "experience",
+          tools: ["CVSS v3.1 Calculator", "VAPT Audit Reports", "Remediation Guidance", "Risk Assessment"]
+        }
+      ]
+    },
+    {
+      id: "dom-noir",
+      num: "03",
+      name: "CODEBASE INVESTIGATION & SAST TOOLING",
+      category: "BUILD",
+      subtitle: "DETERMINISTIC CODE INTELLIGENCE & SECURITY AUDIT",
+      summary: "Architecting intelligent code investigation platforms, abstract syntax tree (AST) symbol graphs, security boundary analysis, and SAST tooling.",
+      accentColor: "var(--color-accent)",
+      quickSummary: ["CODE NOIR Engine", "AST Symbol Extraction", "Security Findings", "Call Graph Mapping", "TypeScript / Next.js"],
+      items: [
+        {
+          id: "cap-ast-analysis",
+          name: "AST Symbol & Call Graph Analysis",
+          categoryTag: "CODE ANALYSIS",
+          state: "DEPLOYED",
+          description: "Parsing multi-language source code to map entry points, caller-callee hierarchies, data flow pipelines, and circular dependencies.",
+          evidenceLabel: "CODE NOIR ARCHITECTURE",
+          evidenceAnchor: "operations",
+          tools: ["AST Parsing", "Symbol Extraction", "Call Graphs", "Dependency Analysis"]
+        },
+        {
+          id: "cap-sast-audit",
+          name: "Security & Authentication Pathway Auditing",
+          categoryTag: "SAST",
+          state: "DEPLOYED",
+          description: "Identifying exposed routes, unguarded middleware, database query patterns, and potential privilege escalation vectors directly in code.",
+          evidenceLabel: "CODE NOIR EVIDENCE LOCKER",
+          evidenceAnchor: "operations",
+          tools: ["Static Code Analysis", "Auth Boundary Auditing", "Route Inspection", "Prisma ORM"]
+        },
+        {
+          id: "cap-investigation-desk",
+          name: "AI-Augmented Codebase Investigation",
+          categoryTag: "AI REASONING",
+          state: "DEPLOYED",
+          description: "Bridging deterministic codebase facts with LLM reasoning for conversational investigation, concept walkthroughs, and blast radius discovery.",
+          evidenceLabel: "CODE NOIR DETECTIVE'S DESK",
+          evidenceAnchor: "operations",
+          tools: ["LLM Prompt Engineering", "Vector Grounding", "Evidence Anchoring", "Interactive UI"]
+        },
+        {
+          id: "cap-supply-chain",
+          name: "Software Supply Chain & SBOM Security",
+          categoryTag: "SUPPLY CHAIN",
+          state: "PRACTICED",
+          description: "Scanning dependencies for CVEs, generating Software Bill of Materials (SBOM), and testing against dependency confusion and malicious packages.",
+          evidenceLabel: "SUPPLY CHAIN LAB",
+          evidenceAnchor: "field-operations",
+          tools: ["SBOM (CycloneDX)", "Dependency-Check", "Lockfile Auditing", "CI/CD Gatekeeping"]
         }
       ]
     },
     {
       id: "dom-defend",
-      num: "02",
-      name: "BLUE TEAM / DEFENSIVE SECURITY",
+      num: "04",
+      name: "DEFENSIVE TELEMETRY & DETECTION AWARENESS",
       category: "DEFEND",
-      subtitle: "DEFENSIVE OPERATIONS, THREAT TRIAGE & HUNTING",
-      summary: "Analyzing log telemetry, monitoring security events, triaging alerts, threat hunting, and hardening application posture against threats.",
+      subtitle: "SOC WORKFLOWS, TELEMETRY CORRELATION & HARDENING",
+      summary: "Understanding defender signals, log telemetry, SIEM correlation, and detection engineering to craft more elusive red team attacks and resilient defenses.",
       accentColor: "var(--color-intelligence)",
-      quickSummary: ["SOC Workflows", "SIEM Telemetry", "Threat Triage", "Threat Hunting", "System Hardening"],
+      quickSummary: ["SIEM Telemetry", "SENTINEL AI SOC", "Honeypot IOCs", "eBPF Tracing", "System Hardening"],
       items: [
         {
-          id: "cap-siem",
-          name: "SIEM & Log Telemetry Inspection",
+          id: "cap-siem-telemetry",
+          name: "SIEM & Log Telemetry Correlation",
           categoryTag: "ANALYSIS",
           state: "PRACTICED",
-          description: "Analyzing HTTP server logs, access trails, auth attempts, and event telemetry for suspicious anomalies.",
+          description: "Inspecting HTTP server logs, access trails, authentication failure bursts, and correlate multi-source event signals.",
           evidenceLabel: "SENTINEL AI SOC",
           evidenceAnchor: "operations",
           tools: ["SIEM Workflows", "Log Telemetry", "Event Correlation", "JSON Logs"]
         },
         {
-          id: "cap-triage",
-          name: "Threat Triage & Incident Investigation",
-          categoryTag: "OPERATIONS",
+          id: "cap-honeypot-intel",
+          name: "Deception Tech & IOC Capture",
+          categoryTag: "DECEPTION",
           state: "PRACTICED",
-          description: "Categorizing security events, assessing breach impact potential, and documenting triage findings.",
-          evidenceLabel: "SENTINEL THREAT TRIAGE",
-          evidenceAnchor: "operations",
-          tools: ["Incident Triage", "Alert Categorization", "Risk Scoring", "Audit Logs"]
+          description: "Deploying deceptive honeypot listeners to study active scanner techniques, capture malicious payloads, and extract threat indicators.",
+          evidenceLabel: "HONEYPOT INTELLIGENCE LAB",
+          evidenceAnchor: "field-operations",
+          tools: ["Honeypots", "Docker", "IOC Extraction", "Command Logging"]
         },
         {
-          id: "cap-hardening",
-          name: "Defensive System & API Hardening",
+          id: "cap-kernel-observability",
+          name: "eBPF Linux Kernel Syscall Observability",
+          categoryTag: "OBSERVABILITY",
+          state: "PRACTICED",
+          description: "Tracing kernel-level system calls, process execution forks, socket connections, and privilege alterations via eBPF tracepoints.",
+          evidenceLabel: "eBPF THREAT TRACER",
+          evidenceAnchor: "field-operations",
+          tools: ["eBPF / BCC", "Linux Kernel Hooks", "Syscall Tracing", "C / Python"]
+        },
+        {
+          id: "cap-defensive-hardening",
+          name: "Defensive Posture & API Hardening",
           categoryTag: "HARDENING",
           state: "WORKING KNOWLEDGE",
-          description: "Implementing defensive HTTP headers, input sanitization, rate limiting, and access control boundaries.",
-          evidenceLabel: "SECURITY ARCHITECTURE",
-          evidenceAnchor: "identity",
-          tools: ["Security Headers", "Input Validation", "CORS Policy", "Access Control"]
-        },
-        {
-          id: "cap-blue-cert",
-          name: "Blue Team Security Operations",
-          categoryTag: "DEFENSE",
-          state: "LEARNING",
-          description: "Continuous study of SOC analyst workflows, threat intelligence feeds, and defensive cybersecurity frameworks.",
-          evidenceLabel: "TECHNICAL EVOLUTION",
-          evidenceAnchor: "identity",
-          tools: ["SOC Frameworks", "Threat Intelligence", "MITRE ATT&CK Basics"]
-        }
-      ]
-    },
-    {
-      id: "dom-build",
-      num: "03",
-      name: "APPLICATION & IDENTITY SECURITY",
-      category: "BUILD",
-      subtitle: "SECURE ARCHITECTURE & IDENTITY BOUNDARIES",
-      summary: "Building secure software architectures, type-safe API boundaries, authentication mechanics, and resilient application backends.",
-      accentColor: "var(--color-accent)",
-      quickSummary: ["React & TS", "Node.js & Express", "Python Scripting", "Auth & Access Control", "Security Headers"],
-      items: [
-        {
-          id: "cap-react",
-          name: "React & Modern Client Architecture",
-          categoryTag: "FRONTEND",
-          state: "DEPLOYED",
-          description: "Production-tested component architecture, custom React hooks, declarative state management, and optimized render cycles.",
-          evidenceLabel: "PORTFOLIO SYSTEM",
-          evidenceAnchor: "access",
-          tools: ["React", "JSX/TSX", "Custom Hooks", "Context API", "Vite"]
-        },
-        {
-          id: "cap-ts",
-          name: "TypeScript & Type Safety",
-          categoryTag: "ARCHITECTURE",
-          state: "DEPLOYED",
-          description: "Strict TypeScript interfaces, domain type modeling, async API data contracts, and build-time safety guarantees.",
-          evidenceLabel: "PORTFOLIO SYSTEM",
-          evidenceAnchor: "access",
-          tools: ["TypeScript", "Interfaces", "Generics", "Type Guards"]
-        },
-        {
-          id: "cap-node",
-          name: "Node.js & Express Backend APIs",
-          categoryTag: "BACKEND",
-          state: "PRACTICED",
-          description: "RESTful server architectures, async route handlers, JSON telemetry serialization, and middleware pipelines.",
-          evidenceLabel: "BACKEND APIS",
-          evidenceAnchor: "operations",
-          tools: ["Node.js", "Express", "REST APIs", "Middleware", "JSON"]
-        },
-        {
-          id: "cap-python",
-          name: "Python Scripting & Automation",
-          categoryTag: "SCRIPTING",
-          state: "PRACTICED",
-          description: "Utility scripts, data processing pipelines, network protocol interaction, and AI orchestration backends.",
-          evidenceLabel: "SENTINEL SOC PIPELINE",
-          evidenceAnchor: "operations",
-          tools: ["Python 3", "Asyncio", "Requests", "Data Parsing"]
-        },
-        {
-          id: "cap-web",
-          name: "HTML5, CSS3 & Neo-Brutalist Styling",
-          categoryTag: "FOUNDATION",
-          state: "DEPLOYED",
-          description: "Custom CSS variable token systems, responsive CSS grid/flexbox layouts, accessibility standards, and semantic HTML.",
-          evidenceLabel: "PORTFOLIO DESIGN SYSTEM",
-          evidenceAnchor: "access",
-          tools: ["HTML5", "CSS Variables", "CSS Grid", "Flexbox", "Design Tokens"]
-        },
-        {
-          id: "cap-gsap",
-          name: "GSAP & Web Motion Choreography",
-          categoryTag: "VISUAL",
-          state: "PRACTICED",
-          description: "ScrollTrigger timelines, staggered entrance reveals, SVG path drawing, and controlled web animations.",
-          evidenceLabel: "HERO & JOURNEY ANIMATIONS",
-          evidenceAnchor: "identity",
-          tools: ["GSAP", "ScrollTrigger", "Timeline", "SVG Animation"]
-        }
-      ]
-    },
-    {
-      id: "dom-automate",
-      num: "04",
-      name: "AI SECURITY / AUTOMATION",
-      category: "AUTOMATE",
-      subtitle: "AI-ASSISTED SOC & OPERATIONAL AUTOMATION",
-      summary: "Pioneering autonomous AI agent orchestration, multi-LLM routing, function calling, and automated security pipelines.",
-      accentColor: "var(--color-intelligence)",
-      quickSummary: ["Multi-LLM Routing", "Agentic Tool Calling", "AI SOC Triage", "RAG Pipelines", "JARVIS & SENTINEL"],
-      items: [
-        {
-          id: "cap-llm",
-          name: "Multi-LLM Integration & Prompt Routing",
-          categoryTag: "AI ENGINE",
-          state: "DEPLOYED",
-          description: "Structuring prompts, managing context windows, and orchestrating multi-model LLM API routing for intelligent tasks.",
-          evidenceLabel: "OPERATION JARVIS",
-          evidenceAnchor: "operations",
-          tools: ["Multi-LLM APIs", "Structured Prompts", "Context Routing", "JSON Parsing"]
-        },
-        {
-          id: "cap-agents",
-          name: "Agentic Tool Calling & Decision Loops",
-          categoryTag: "AGENTS",
-          state: "DEPLOYED",
-          description: "Designing autonomous agent execution loops with tool calling, multi-step decision logic, and error recovery.",
-          evidenceLabel: "OPERATION JARVIS",
-          evidenceAnchor: "operations",
-          tools: ["Agentic Frameworks", "Function Calling", "Tool Definitions", "Autonomous Loops"]
-        },
-        {
-          id: "cap-ai-soc",
-          name: "AI-Powered Security Automation",
-          categoryTag: "SECURITY AI",
-          state: "IN PROGRESS",
-          description: "Integrating LLM intelligence with log telemetry streams to automate alert triage and incident report generation.",
-          evidenceLabel: "OPERATION SENTINEL",
-          evidenceAnchor: "operations",
-          tools: ["SENTINEL AI SOC", "Log Summarization", "Automated Triage", "Report Generation"]
-        },
-        {
-          id: "cap-rag",
-          name: "RAG & Document Intelligence",
-          categoryTag: "AI TOOLS",
-          state: "PRACTICED",
-          description: "Retrieval-Augmented Generation workflows for querying documentation, codebase context, and technical data.",
-          evidenceLabel: "AI PIPELINES",
-          evidenceAnchor: "operations",
-          tools: ["RAG Pipelines", "Embeddings", "Context Retrieval", "Document Parsing"]
+          description: "Recommending defense-in-depth remediations: strict CSP headers, rate-limiting algorithms, parameterized queries, and CORS boundaries.",
+          evidenceLabel: "VAPT REMEDIATION ADVICE",
+          evidenceAnchor: "experience",
+          tools: ["Security Headers", "Input Sanitization", "WAF Rules", "Access Control"]
         }
       ]
     }
@@ -416,16 +385,123 @@ export const DOSSIER_DATA: DossierData = {
 
   flagshipOperations: [
     {
+      id: "op-noir",
+      anchorId: "operation-codenoir",
+      shortcutKey: "C",
+      num: "01",
+      codename: "OPERATION: CODE NOIR",
+      name: "CODE NOIR",
+      classification: "AI CODE INTELLIGENCE & SECURITY PLATFORM",
+      status: "VERIFIED",
+      url: "https://github.com/IamjustaOversizedKidddoo/CODE-NOIR",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/CODE-NOIR",
+      coreTagline: "EVERY CODEBASE HAS A STORY. INVESTIGATE IT.",
+      summary: "AI-powered codebase investigation and security intelligence platform transforming complex repositories into structured, evidence-backed interactive architecture and security findings.",
+      description: "CODE NOIR bridges deterministic code intelligence and AI reasoning. Instead of generic summaries, it parses repository ASTs, maps symbol call graphs, audits authentication and API routes, and enables iterative security investigations through the Detective's Desk and Crime Scene visual graph. Built on the core principle: Evidence first. Explanation second.",
+      accentColor: "var(--color-threat)",
+      technologies: ["Next.js", "TypeScript", "Prisma", "AST Parsing", "Security Findings", "TailwindCSS", "Vitest", "AI Code Graph"],
+      architectureNodes: [
+        { id: "cn-ingest", label: "INGESTION", type: "input", subtext: "Zip / Git Clone / Source Folder" },
+        { id: "cn-ast", label: "CODE INTELLIGENCE", type: "router", subtext: "AST / Symbols / Import & Call Graph" },
+        { id: "cn-evidence", label: "EVIDENCE LAYER", type: "engine", subtext: "Verified Facts & Source Grounding" },
+        { id: "cn-sec", label: "SECURITY AUDITING", type: "tool", subtext: "Auth Paths, Blast Radius & Findings" },
+        { id: "cn-desk", label: "DETECTIVE'S DESK", type: "output", subtext: "Iterative AI Investigation & Visual Map" }
+      ],
+      features: [
+        {
+          id: "cn-f1",
+          category: "ANALYSIS",
+          name: "Case Brief Generation",
+          state: "DEPLOYED",
+          description: "Rapidly synthesizes repository structure, entry points, detected languages, and major architectural systems."
+        },
+        {
+          id: "cn-f2",
+          category: "INVESTIGATION",
+          name: "The Detective's Desk",
+          state: "DEPLOYED",
+          description: "Conversational investigation workspace grounding natural questions in verifiable source evidence and call paths."
+        },
+        {
+          id: "cn-f3",
+          category: "VISUALIZATION",
+          name: "Crime Scene Architecture Map",
+          state: "DEPLOYED",
+          description: "Interactive graph visualizing imports, callers, callees, circular dependencies, and blast radius impact."
+        },
+        {
+          id: "cn-f4",
+          category: "SECURITY",
+          name: "Evidence Locker & Security Findings",
+          state: "DEPLOYED",
+          description: "Systematic auditing of indexed symbols, configuration files, authentication routes, and security risk indicators."
+        }
+      ]
+    },
+    {
+      id: "op-sentinel",
+      anchorId: "operation-sentinel",
+      shortcutKey: "S",
+      num: "02",
+      codename: "OPERATION: SENTINEL",
+      name: "SENTINEL",
+      classification: "AI SOC ANALYST PLATFORM",
+      status: "VERIFIED",
+      url: "https://github.com/IamjustaOversizedKidddoo",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo",
+      coreTagline: "CONNECT SIGNALS, NOT JUST ALERTS.",
+      summary: "AI-powered SOC analyst platform designed for security signal correlation, threat triage, and incident investigation automation.",
+      description: "SENTINEL transforms raw, high-volume SIEM alert noise into correlated security signals. Using LLM-assisted context synthesis, it correlates multi-source log telemetry to accelerate SOC investigation and threat response.",
+      accentColor: "var(--color-intelligence)",
+      technologies: ["Python", "SIEM Telemetry", "Log Analysis", "LLM Incident Triage", "Signal Correlation", "Security Workflows"],
+      architectureNodes: [
+        { id: "s-logs", label: "LOG TELEMETRY", type: "input", subtext: "HTTP / Auth / SIEM Logs" },
+        { id: "s-correlator", label: "SIGNAL CORRELATOR", type: "router", subtext: "Event Relationship Engine" },
+        { id: "s-triage", label: "AI SOC TRIAGE", type: "engine", subtext: "LLM Context Synthesis" },
+        { id: "s-case", label: "INCIDENT CASE", type: "output", subtext: "Actionable Investigation" }
+      ],
+      features: [
+        {
+          id: "s-f1",
+          category: "SECURITY AI",
+          name: "SIEM Signal Correlation",
+          state: "PRACTICED",
+          description: "Correlates multi-source audit logs to extract meaningful threat signals from alert noise."
+        },
+        {
+          id: "s-f2",
+          category: "TRIAGE",
+          name: "Automated Incident Triage",
+          state: "PRACTICED",
+          description: "Uses LLM context synthesis to draft initial incident reports and assign severity risk scores."
+        },
+        {
+          id: "s-f3",
+          category: "INVESTIGATION",
+          name: "Interactive Workspace Module",
+          state: "IN PROGRESS",
+          description: "Provides security analysts with visual evidence graphs and timeline correlation tools."
+        },
+        {
+          id: "s-f4",
+          category: "WORKFLOW",
+          name: "Security Playbook Automation",
+          state: "IN PROGRESS",
+          description: "Automates repetitive SOC triage tasks to reduce mean time to investigate (MTTI)."
+        }
+      ]
+    },
+    {
       id: "op-jarvis",
       anchorId: "operation-jarvis",
       shortcutKey: "J",
-      num: "01",
+      num: "03",
       codename: "OPERATION: JARVIS",
       name: "JARVIS",
       classification: "MULTI-LLM AGENTIC SYSTEM",
       status: "VERIFIED",
-      url: "https://github.com/SyedMohammedAyanAbbasNaqvi",
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      url: "https://github.com/IamjustaOversizedKidddoo",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo",
       coreTagline: "MULTI-MODEL ORCHESTRATION & AGENTIC AUTOMATION",
       summary: "Personal AI assistant infrastructure providing multi-model routing, voice interaction, document intelligence (RAG), and task execution.",
       description: "JARVIS acts as an intelligent command bridge. Rather than relying on a single AI model, it routes developer & operational prompts to task-optimized LLMs, manages retrieval-augmented context, and executes automated multi-step tool calls.",
@@ -468,61 +544,57 @@ export const DOSSIER_DATA: DossierData = {
           description: "Executes structured multi-step task loops for automated workflow assistance."
         }
       ]
-    },
-    {
-      id: "op-sentinel",
-      anchorId: "operation-sentinel",
-      shortcutKey: "S",
-      num: "02",
-      codename: "OPERATION: SENTINEL",
-      name: "SENTINEL",
-      classification: "AI SOC ANALYST PLATFORM",
-      status: "VERIFIED",
-      url: "https://github.com/SyedMohammedAyanAbbasNaqvi",
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
-      coreTagline: "CONNECT SIGNALS, NOT JUST ALERTS.",
-      summary: "AI-powered SOC analyst platform designed for security signal correlation, threat triage, and incident investigation automation.",
-      description: "SENTINEL transforms raw, high-volume SIEM alert noise into correlated security signals. Using LLM-assisted context synthesis, it correlates multi-source log telemetry to accelerate SOC investigation and threat response.",
-      accentColor: "var(--color-intelligence)",
-      technologies: ["Python", "SIEM Telemetry", "Log Analysis", "LLM Incident Triage", "Signal Correlation", "Security Workflows"],
-      architectureNodes: [
-        { id: "s-logs", label: "LOG TELEMETRY", type: "input", subtext: "HTTP / Auth / SIEM Logs" },
-        { id: "s-correlator", label: "SIGNAL CORRELATOR", type: "router", subtext: "Event Relationship Engine" },
-        { id: "s-triage", label: "AI SOC TRIAGE", type: "engine", subtext: "LLM Context Synthesis" },
-        { id: "s-case", label: "INCIDENT CASE", type: "output", subtext: "Actionable Investigation" }
-      ],
-      features: [
-        {
-          id: "s-f1",
-          category: "SECURITY AI",
-          name: "SIEM Signal Correlation",
-          state: "PRACTICED",
-          description: "Correlates multi-source audit logs to extract meaningful threat signals from alert noise."
-        },
-        {
-          id: "s-f2",
-          category: "TRIAGE",
-          name: "Automated Incident Triage",
-          state: "PRACTICED",
-          description: "Uses LLM context synthesis to draft initial incident reports and assign severity risk scores."
-        },
-        {
-          id: "s-f3",
-          category: "INVESTIGATION",
-          name: "Interactive Workspace Module",
-          state: "IN PROGRESS",
-          description: "Provides security analysts with visual evidence graphs and timeline correlation tools."
-        },
-        {
-          id: "s-f4",
-          category: "WORKFLOW",
-          name: "Security Playbook Automation",
-          state: "IN PROGRESS",
-          description: "Automates repetitive SOC triage tasks to reduce mean time to investigate (MTTI)."
-        }
-      ]
     }
   ],
+
+  experiences: [
+    {
+      id: "exp-trioscyber",
+      role: "Vulnerability Assessment & Penetration Testing (VAPT) Intern",
+      organization: "TriosCyber",
+      period: "01 SEPT – 01 OCT",
+      duration: "1 MONTH INTENSIVE ENGAGEMENT",
+      location: "REMOTE / INDIA",
+      type: "INTERNSHIP",
+      status: "COMPLETED",
+      classification: "VAPT & OFFENSIVE SECURITY OPERATIONS",
+      summary: "Conducted black-box and grey-box penetration testing and vulnerability assessments across client web applications, APIs, and network perimeters following OWASP Top 10 and WSTG standards.",
+      responsibilities: [
+        "Executed end-to-end web application penetration tests identifying vulnerabilities categorized in OWASP Top 10 (Injection, Broken Access Control, XSS, Security Misconfigurations).",
+        "Conducted network vulnerability assessments using Nmap and Nessus to uncover open services, out-of-date daemons, weak ciphers, and unpatched CVEs.",
+        "Audited RESTful API boundaries, discovering Broken Object Level Authorization (BOLA/IDOR), improper rate-limiting, and sensitive data exposures.",
+        "Formulated custom Proof-of-Concept (PoC) exploit scripts in Python to validate critical findings and eliminate false positives generated by automated scanners.",
+        "Calculated CVSS v3.1 base scores and authored comprehensive VAPT remediation audit reports delivered directly to development and management teams."
+      ],
+      keyVulnerabilities: [
+        "Broken Object Level Authorization (BOLA / IDOR) in API Endpoints",
+        "Cross-Site Scripting (Reflected & Stored XSS) in User Inputs",
+        "SQL Injection & Parameter Tampering in Form Handlers",
+        "Missing Security Headers, Weak SSL/TLS Ciphers & CORS Misconfigurations",
+        "Session Management Weaknesses & Insufficient Session Invalidation"
+      ],
+      methodologies: [
+        "OWASP Top 10 Web Application Security Risks",
+        "OWASP Web Security Testing Guide (WSTG)",
+        "Penetration Testing Execution Standard (PTES)",
+        "Common Vulnerability Scoring System (CVSS v3.1)",
+        "NIST SP 800-115 Technical Guide to Information Security Testing"
+      ],
+      tools: [
+        "Burp Suite Professional",
+        "Nmap",
+        "Nessus",
+        "Metasploit Framework",
+        "Postman",
+        "Wireshark",
+        "Python Exploit Automation",
+        "Linux CLI / Bash"
+      ],
+      verificationStamp: "TRIOSCYBER // VERIFIED VAPT INTERNSHIP RECORD",
+      credentialRef: "cred-ictrd-ccsp"
+    }
+  ],
+
   credentials: [
     {
       id: "cred-ictrd-ccsp",
@@ -562,23 +634,20 @@ export const DOSSIER_DATA: DossierData = {
   contact: {
     email: "ayanabbas78677@gmail.com",
     linkedin: "https://www.linkedin.com/in/ayan-abbas-521897271/",
-    github: "https://github.com/SyedMohammedAyanAbbasNaqvi",
-    availability: "OPEN TO DISCUSSION",
+    github: "https://github.com/IamjustaOversizedKidddoo",
+    availability: "OPEN TO DISCUSSION // RED TEAM & VAPT ROLES",
     location: "LKO-IN / LUCKNOW, IN",
     responseWindow: "24-48 HOURS"
   },
   systems: [
-
-
-
     {
-      name: "JARVIS",
-      type: "AGENTIC AI OPERATIVE",
-      status: "UNDER DEVELOPMENT",
-      description: "Multi-LLM autonomous assistant infrastructure for complex developer & operational task automation.",
+      name: "CODE NOIR",
+      type: "AI CODE INVESTIGATOR & SAST ENGINE",
+      status: "ACTIVE",
+      description: "Deterministic AST code intelligence, symbol call graphs, and security finding platform.",
       metrics: [
-        { label: "LATENCY", value: "85ms" },
-        { label: "AGENTS", value: "MULTI-MODEL" }
+        { label: "PARSER", value: "AST MULTI-LANG" },
+        { label: "GROUNDING", value: "EVIDENCE FIRST" }
       ]
     },
     {
@@ -589,6 +658,16 @@ export const DOSSIER_DATA: DossierData = {
       metrics: [
         { label: "DETECTION", value: "REAL-TIME" },
         { label: "PIPELINE", value: "ACTIVE" }
+      ]
+    },
+    {
+      name: "JARVIS",
+      type: "AGENTIC AI OPERATIVE",
+      status: "UNDER DEVELOPMENT",
+      description: "Multi-LLM autonomous assistant infrastructure for complex developer & operational task automation.",
+      metrics: [
+        { label: "LATENCY", value: "85ms" },
+        { label: "AGENTS", value: "MULTI-MODEL" }
       ]
     }
   ],
@@ -624,10 +703,56 @@ export const DOSSIER_DATA: DossierData = {
   ],
   caseFiles: [
     {
-      id: "cf-api-attack-lab",
+      id: "cf-code-noir",
       number: "CASE // 001",
+      codename: "CODE NOIR",
+      title: "CODE NOIR — AI Codebase Investigation Platform",
+      category: "RED TEAM",
+      classification: "CODE INTELLIGENCE & SECURITY FINDINGS",
+      status: "VERIFIED",
+      summary: "AI-powered codebase investigation and security intelligence platform transforming complex repositories into structured, evidence-backed interactive architecture and security findings.",
+      problem: "Understanding unfamiliar codebases and identifying security boundaries, unverified routes, and auth flaws is hindered by hallucinating AI tools that lack deterministic facts.",
+      solution: "Engineered a platform combining AST symbol parsing, import/call dependency mapping, an evidence layer, and an interactive Detective's Desk grounded in verifiable facts.",
+      technicalApproach: [
+        "Deterministic AST parsing to extract symbols, entry points, caller-callee chains, and module dependencies.",
+        "Security finding scanner auditing auth routes, configuration manifests, database calls, and blast radiuses.",
+        "Detective's Desk conversational investigation loop and Crime Scene visual graph for deep architectural understanding."
+      ],
+      technologies: ["Next.js", "TypeScript", "Prisma", "AST Analysis", "Security Findings", "TailwindCSS", "Vitest"],
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/CODE-NOIR",
+      liveUrl: null,
+      accentColor: "var(--color-threat)",
+      evidenceLabel: "FLAGSHIP CODEBASE PLATFORM",
+      featured: true
+    },
+    {
+      id: "cf-trioscyber-vapt",
+      number: "CASE // 002",
+      codename: "TRIOSCYBER VAPT ENGAGEMENT",
+      title: "Industrial VAPT Assessment Dossier",
+      category: "VAPT",
+      classification: "VULNERABILITY ASSESSMENT & PENETRATION TESTING",
+      status: "COMPLETED",
+      summary: "One-month hands-on industrial VAPT internship conducting penetration tests on web applications, network infrastructure, and REST APIs at TriosCyber.",
+      problem: "Client web platforms and exposed services suffer from authorization flaws, unpatched software vulnerabilities, and security misconfigurations accessible to adversaries.",
+      solution: "Conducted systematic vulnerability assessments following OWASP Top 10 and WSTG guidelines, executed manual PoC exploit scripts, and delivered comprehensive remediation roadmaps.",
+      technicalApproach: [
+        "Black-box & grey-box web application testing covering SQLi, XSS, BOLA/IDOR, and CSRF vulnerabilities.",
+        "Network port scanning, service enumeration, and vulnerability auditing using Nmap and Nessus.",
+        "Manual PoC exploit creation in Python, CVSS v3.1 scoring, and executive remediation report authorship."
+      ],
+      technologies: ["Burp Suite Pro", "OWASP Top 10", "Nmap", "Nessus", "Python PoC Scripts", "CVSS v3.1", "WSTG"],
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/cyber-portfolio",
+      liveUrl: null,
+      accentColor: "var(--color-threat)",
+      evidenceLabel: "TRIOSCYBER VAPT ENGAGEMENT",
+      featured: true
+    },
+    {
+      id: "cf-api-attack-lab",
+      number: "CASE // 003",
       codename: "API ATTACK LAB",
-      title: "API Attack Lab",
+      title: "API Attack & Exploitation Lab",
       category: "RED TEAM",
       classification: "OFFENSIVE SECURITY RESEARCH",
       status: "COMPLETED",
@@ -640,17 +765,17 @@ export const DOSSIER_DATA: DossierData = {
         "Authorization boundary inspection and access control flaw identification."
       ],
       technologies: ["Python", "Burp Suite", "OWASP API Top 10", "REST APIs", "JWT", "Fuzzing"],
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/cyber-portfolio",
       liveUrl: null,
       accentColor: "var(--color-threat)",
       evidenceLabel: "RED TEAM LAB #01",
-      featured: true
+      featured: false
     },
     {
       id: "cf-token-abuse-lab",
-      number: "CASE // 002",
+      number: "CASE // 004",
       codename: "TOKEN ABUSE LAB",
-      title: "Token Abuse Lab",
+      title: "Token Abuse & Identity Exploitation Lab",
       category: "RED TEAM",
       classification: "IDENTITY & AUTHENTICATION RESEARCH",
       status: "COMPLETED",
@@ -663,16 +788,16 @@ export const DOSSIER_DATA: DossierData = {
         "OAuth 2.0 grant flow state validation and redirect security inspection."
       ],
       technologies: ["Python", "JWT Security", "OAuth 2.0", "Token Forensics", "Cryptography", "Session Security"],
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/cyber-portfolio",
       liveUrl: null,
       accentColor: "var(--color-threat)",
       evidenceLabel: "RED TEAM LAB #02"
     },
     {
       id: "cf-supply-chain-attack-lab",
-      number: "CASE // 003",
+      number: "CASE // 005",
       codename: "SUPPLY CHAIN ATTACK LAB",
-      title: "Supply Chain Attack Lab",
+      title: "Supply Chain & Dependency Integrity Lab",
       category: "RED TEAM",
       classification: "SOFTWARE SUPPLY CHAIN SECURITY",
       status: "COMPLETED",
@@ -685,16 +810,16 @@ export const DOSSIER_DATA: DossierData = {
         "Automated lockfile parsing and transitive dependency vulnerability scanning."
       ],
       technologies: ["Node.js", "Python", "SBOM (CycloneDX)", "Dependency Audit", "Package Integrity", "CI/CD Security"],
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/cyber-portfolio",
       liveUrl: null,
       accentColor: "var(--color-threat)",
       evidenceLabel: "RED TEAM LAB #03"
     },
     {
       id: "cf-race-condition-lab",
-      number: "CASE // 004",
+      number: "CASE // 006",
       codename: "RACE CONDITION LAB",
-      title: "Race Condition Lab",
+      title: "Race Condition & Concurrency Lab",
       category: "RED TEAM",
       classification: "CONCURRENT APPLICATION SECURITY",
       status: "COMPLETED",
@@ -707,16 +832,16 @@ export const DOSSIER_DATA: DossierData = {
         "Mitigation evaluation using row locks, mutex primitives, and atomic state updates."
       ],
       technologies: ["Go", "Python (Asyncio)", "HTTP/2 Parallel Streams", "Database Locking", "Concurrency Analysis", "TOCTOU Testing"],
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/cyber-portfolio",
       liveUrl: null,
       accentColor: "var(--color-threat)",
       evidenceLabel: "RED TEAM LAB #04"
     },
     {
       id: "cf-ai-threat-detection",
-      number: "CASE // 005",
+      number: "CASE // 007",
       codename: "AI THREAT DETECTION",
-      title: "AI Threat Detection",
+      title: "AI Threat Detection & Telemetry",
       category: "BLUE TEAM",
       classification: "MACHINE-LEARNING DEFENSIVE DETECTION",
       status: "COMPLETED",
@@ -729,16 +854,16 @@ export const DOSSIER_DATA: DossierData = {
         "Automated alert generation and threat classification for SOC triage workflows."
       ],
       technologies: ["Python", "Scikit-Learn", "Log Telemetry", "Anomaly Detection", "Detection Engineering", "JSON Logs"],
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/cyber-portfolio",
       liveUrl: null,
       accentColor: "var(--color-intelligence)",
       evidenceLabel: "BLUE TEAM LAB #05"
     },
     {
       id: "cf-honeypot-intelligence",
-      number: "CASE // 006",
+      number: "CASE // 008",
       codename: "HONEYPOT INTELLIGENCE",
-      title: "Honeypot Intelligence",
+      title: "Honeypot Deception & IOC Capture",
       category: "BLUE TEAM",
       classification: "DECEPTION & THREAT INTELLIGENCE",
       status: "COMPLETED",
@@ -751,16 +876,16 @@ export const DOSSIER_DATA: DossierData = {
         "Mapping observed attacker commands and activity vectors to MITRE ATT&CK."
       ],
       technologies: ["Python", "Docker", "Honeypots", "IOC Extraction", "MITRE ATT&CK", "Log Analytics"],
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/cyber-portfolio",
       liveUrl: null,
       accentColor: "var(--color-intelligence)",
       evidenceLabel: "BLUE TEAM LAB #06"
     },
     {
       id: "cf-ebpf-threat-tracer",
-      number: "CASE // 007",
+      number: "CASE // 009",
       codename: "eBPF THREAT TRACER",
-      title: "eBPF Threat Tracer",
+      title: "eBPF Kernel Syscall Observability",
       category: "BLUE TEAM",
       classification: "LINUX SECURITY OBSERVABILITY",
       status: "COMPLETED",
@@ -773,34 +898,10 @@ export const DOSSIER_DATA: DossierData = {
         "User-space telemetry pipeline converting kernel events into structured security alerts."
       ],
       technologies: ["C", "eBPF / BCC", "Linux Kernel Hooks", "Syscall Tracing", "Python", "Security Observability"],
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
+      githubUrl: "https://github.com/IamjustaOversizedKidddoo/cyber-portfolio",
       liveUrl: null,
       accentColor: "var(--color-intelligence)",
       evidenceLabel: "BLUE TEAM LAB #07"
-    },
-    {
-      id: "cf-cyber-threat-situation-room",
-      number: "CASE // 008",
-      codename: "CYBER THREAT SITUATION ROOM",
-      title: "Cyber Threat Situation Room",
-      category: "BLUE TEAM",
-      classification: "THREAT INTELLIGENCE VISUALIZATION",
-      status: "COMPLETED",
-      summary: "Threat intelligence visualization dashboard correlating threat feeds, CVE vulnerability risk data, and security indicators.",
-      problem: "Security analysts face fragmentation when attempting to correlate threat feeds, CVE metrics, and active incident data.",
-      solution: "Built a centralized situation room dashboard visualizing threat metrics, vulnerability scores, and correlated IOC telemetry.",
-      technicalApproach: [
-        "Aggregation & normalization of open threat intelligence feeds and CVE databases.",
-        "Exploitation risk scoring and CVSS severity metric visualization.",
-        "Interactive threat correlation map and security telemetry timeline controls."
-      ],
-      technologies: ["React", "TypeScript", "Vite", "D3.js / Charting", "Threat Feeds API", "REST"],
-      githubUrl: "https://github.com/SyedMohammedAyanAbbasNaqvi",
-      liveUrl: null,
-      accentColor: "var(--color-intelligence)",
-      evidenceLabel: "BLUE TEAM LAB #08"
     }
   ]
 };
-
-

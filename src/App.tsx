@@ -9,13 +9,14 @@ import { IdentityChapter } from "./components/dossier/IdentityChapter";
 import { TechnicalEvolution } from "./components/dossier/TechnicalEvolution";
 import { CapabilityMatrixSection } from "./components/capability/CapabilityMatrixSection";
 import { OperationsSection } from "./components/operations/OperationsSection";
+import { ExperienceSection } from "./components/experience/ExperienceSection";
 import { FieldOperationsSection } from "./components/field/FieldOperationsSection";
 import { ClearanceSection } from "./components/clearance/ClearanceSection";
 import { AccessSection } from "./components/access/AccessSection";
 import { FinalFooter } from "./components/access/FinalFooter";
 import { useActiveSection } from "./hooks/useActiveSection";
 
-const SECTION_IDS = ["dossier-hero", "identity", "capabilities", "operations", "field-operations", "clearance", "access"];
+const SECTION_IDS = ["dossier-hero", "identity", "capabilities", "operations", "experience", "field-operations", "clearance", "access"];
 
 export const App: React.FC = () => {
   const [showBoot, setShowBoot] = useState<boolean>(false);
@@ -96,7 +97,7 @@ export const App: React.FC = () => {
                       marginTop: "2px",
                     }}
                   >
-                    OFFENSE × DEFENSE × DETECTION × AUTOMATION
+                    OFFENSIVE SECURITY × ETHICAL HACKING × VAPT × CODE INTELLIGENCE
                   </div>
                 </div>
 
@@ -151,10 +152,13 @@ export const App: React.FC = () => {
           {/* 02 - CAPABILITIES MATRIX SECTION */}
           <CapabilityMatrixSection />
 
-          {/* 03 - OPERATIONS SECTION (JARVIS + SENTINEL) */}
+          {/* 03 - OPERATIONS SECTION (CODE NOIR + SENTINEL + JARVIS) */}
           <OperationsSection />
 
-          {/* 04 - FIELD OPERATIONS SECTION (PROJECT ARCHIVE) */}
+          {/* 04 - OPERATIONAL EXPERIENCE & ENGAGEMENTS (TRIOSCYBER VAPT INTERNSHIP) */}
+          <ExperienceSection />
+
+          {/* 05 - FIELD OPERATIONS SECTION (PROJECT ARCHIVE & LABS) */}
           <FieldOperationsSection />
 
           {/* 05 - CLEARANCE SECTION (CREDENTIALS & AUDIT) */}

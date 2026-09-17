@@ -43,7 +43,7 @@ export const AccessSection: React.FC = () => {
   return (
     <section ref={sectionRef} id="access" style={{ scrollMarginTop: "100px", position: "relative", overflow: "hidden" }}>
       {/* Oversized Chapter Watermark */}
-      <div className="chapter-watermark" aria-hidden="true">06</div>
+      <div className="chapter-watermark" aria-hidden="true">07</div>
 
       {/* Chapter Tag Header */}
       <div
@@ -62,7 +62,7 @@ export const AccessSection: React.FC = () => {
         }}
       >
         <Radio size={14} className="animate-corner-pulse" />
-        <span>CH. 06 // ACCESS</span>
+        <span>CH. 07 // ACCESS</span>
         <span style={{ color: "var(--color-surface-border)" }}>|</span>
         <span style={{ color: "var(--color-text-muted)" }}>CONTACT & RECRUITER TRANSMISSION</span>
       </div>

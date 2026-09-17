@@ -10,7 +10,18 @@
   transition: border-color var(--motion-normal), box-shadow var(--motion-normal);
 }
 
-/* Operation 01: JARVIS Branding & Accent */
+/* Operation 01: CODE NOIR Branding & Accent */
+.operation-flagship-card.codenoir-card {
+  border-left: 4px solid var(--color-threat);
+  box-shadow: 6px 6px 0px var(--color-surface-high);
+}
+
+.operation-flagship-card.codenoir-card:hover {
+  border-color: var(--color-threat);
+  box-shadow: 6px 6px 0px var(--color-threat);
+}
+
+/* Operation 02: JARVIS Branding & Accent */
 .operation-flagship-card.jarvis-card {
   border-left: 4px solid var(--color-accent);
   box-shadow: 6px 6px 0px var(--color-surface-high);
@@ -21,7 +32,7 @@
   box-shadow: 6px 6px 0px var(--color-accent);
 }
 
-/* Operation 02: SENTINEL Branding & Accent */
+/* Operation 03: SENTINEL Branding & Accent */
 .operation-flagship-card.sentinel-card {
   border-left: 4px solid var(--color-intelligence);
   box-shadow: 6px 6px 0px var(--color-surface-high);
@@ -177,6 +188,19 @@
   border-radius: 0px;
   transition: all var(--motion-fast);
   min-height: 48px; /* Touch friendly */
+}
+
+.operation-cta-btn.active-codenoir {
+  background-color: var(--color-threat);
+  color: #fff;
+  border: 2px solid var(--color-threat);
+  box-shadow: 4px 4px 0px var(--color-surface-high);
+}
+
+.operation-cta-btn.active-codenoir:hover {
+  background-color: #ff4767;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-surface-high);
 }
 
 .operation-cta-btn.active-jarvis {

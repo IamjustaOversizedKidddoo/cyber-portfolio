@@ -15,7 +15,7 @@ export const CaseFileFilter: React.FC<CaseFileFilterProps> = ({
   onFilterChange,
   counts,
 }) => {
-  const options: FilterCategory[] = ["ALL", "RED TEAM", "BLUE TEAM"];
+  const options: FilterCategory[] = ["ALL", "RED TEAM", "VAPT", "BLUE TEAM"];
 
   return (
     <div className="field-filter-bar">

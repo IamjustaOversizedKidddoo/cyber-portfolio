@@ -14,6 +14,7 @@ export const CaseFileCard: React.FC<CaseFileCardProps> = ({ caseFile, onPendingC
   const getCategoryIcon = (category: string) => {
     switch (category) {
       case "RED TEAM":
+      case "VAPT":
       case "SECURITY":
         return <Shield size={14} style={{ color: "var(--color-threat)" }} />;
       case "BLUE TEAM":
@@ -27,6 +28,7 @@ export const CaseFileCard: React.FC<CaseFileCardProps> = ({ caseFile, onPendingC
   const getCategoryAccent = (category: string) => {
     switch (category) {
       case "RED TEAM":
+      case "VAPT":
       case "SECURITY":
         return "var(--color-threat)";
       case "BLUE TEAM":

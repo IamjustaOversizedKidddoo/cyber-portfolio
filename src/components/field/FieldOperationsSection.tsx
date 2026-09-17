@@ -57,6 +57,7 @@ export const FieldOperationsSection: React.FC = () => {
   const counts: Record<FilterCategory, number> = {
     ALL: caseFiles.length,
     "RED TEAM": caseFiles.filter((c) => c.category === "RED TEAM").length,
+    VAPT: caseFiles.filter((c) => c.category === "VAPT").length,
     "BLUE TEAM": caseFiles.filter((c) => c.category === "BLUE TEAM").length,
   };
 
@@ -67,7 +68,7 @@ export const FieldOperationsSection: React.FC = () => {
   return (
     <section ref={sectionRef} id="field-operations" style={{ scrollMarginTop: "100px", position: "relative", overflow: "hidden" }}>
       {/* Oversized Chapter Watermark */}
-      <div className="chapter-watermark" aria-hidden="true">04</div>
+      <div className="chapter-watermark" aria-hidden="true">05</div>
 
       {/* Chapter Tag Header */}
       <div
@@ -86,9 +87,9 @@ export const FieldOperationsSection: React.FC = () => {
         }}
       >
         <Server size={14} />
-        <span>CH. 04 // FIELD OPERATIONS</span>
+        <span>CH. 05 // FIELD OPERATIONS</span>
         <span style={{ color: "var(--color-surface-border)" }}>|</span>
-        <span style={{ color: "var(--color-text-muted)" }}>PROJECT CASE ARCHIVE</span>
+        <span style={{ color: "var(--color-text-muted)" }}>PROJECT CASE ARCHIVE & OFFENSIVE LABS</span>
       </div>
 
       {/* Main Chapter Title & Subheading */}

@@ -11,9 +11,10 @@ export const NAV_ITEMS: NavigationItem[] = [
   { id: "identity", num: "01", label: "IDENTITY" },
   { id: "capabilities", num: "02", label: "CAPABILITIES" },
   { id: "operations", num: "03", label: "OPERATIONS" },
-  { id: "field-operations", num: "04", label: "FIELD OPERATIONS" },
-  { id: "clearance", num: "05", label: "CLEARANCE" },
-  { id: "access", num: "06", label: "ACCESS" },
+  { id: "experience", num: "04", label: "ENGAGEMENTS" },
+  { id: "field-operations", num: "05", label: "FIELD CASES" },
+  { id: "clearance", num: "06", label: "CLEARANCE" },
+  { id: "access", num: "07", label: "ACCESS" },
 ];
 
 

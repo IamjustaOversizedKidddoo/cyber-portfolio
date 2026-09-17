@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "../../lib/gsap";
 import { DOSSIER_DATA } from "../../data/dossierData";
+import { CodeNoirOperationCard } from "./CodeNoirOperationCard";
 import { JarvisOperationCard } from "./JarvisOperationCard";
 import { SentinelOperationCard } from "./SentinelOperationCard";
 import { Radio } from "lucide-react";
@@ -37,8 +38,9 @@ export const OperationsSection: React.FC = () => {
     }
   };
 
-  const jarvisData = DOSSIER_DATA.flagshipOperations.find((op) => op.id === "op-jarvis");
+  const codenoirData = DOSSIER_DATA.flagshipOperations.find((op) => op.id === "op-noir");
   const sentinelData = DOSSIER_DATA.flagshipOperations.find((op) => op.id === "op-sentinel");
+  const jarvisData = DOSSIER_DATA.flagshipOperations.find((op) => op.id === "op-jarvis");
 
   return (
     <section ref={sectionRef} id="operations" style={{ scrollMarginTop: "100px", position: "relative", overflow: "hidden" }}>
@@ -54,7 +56,7 @@ export const OperationsSection: React.FC = () => {
           gap: "var(--space-3)",
           fontFamily: "var(--font-family-mono)",
           fontSize: "var(--font-size-xs)",
-          color: "var(--color-accent)",
+          color: "var(--color-threat)",
           fontWeight: "bold",
           letterSpacing: "0.08em",
           marginBottom: "var(--space-2)",
@@ -63,7 +65,7 @@ export const OperationsSection: React.FC = () => {
         <Radio size={14} className="animate-corner-pulse" />
         <span>CH. 03 // OPERATIONS</span>
         <span style={{ color: "var(--color-surface-border)" }}>|</span>
-        <span style={{ color: "var(--color-text-muted)" }}>FLAGSHIP INTELLIGENCE PLATFORMS</span>
+        <span style={{ color: "var(--color-text-muted)" }}>FLAGSHIP INTELLIGENCE & SECURITY PLATFORMS</span>
       </div>
 
       {/* Main Chapter Title & Subtext */}
@@ -93,21 +95,21 @@ export const OperationsSection: React.FC = () => {
           marginBottom: "var(--space-8)",
         }}
       >
-        "These are not static portfolio mockups. They are active, architected systems spanning multi-LLM automation and AI SOC triage."
+        "These are not static portfolio mockups. They are active, architected systems spanning deterministic code intelligence (CODE NOIR), AI SOC triage (SENTINEL), and agentic task orchestration (JARVIS)."
       </p>
 
-      {/* Flagship Operation 01: JARVIS */}
-      {jarvisData && (
-        <JarvisOperationCard
-          operation={jarvisData}
+      {/* Flagship Operation 01: CODE NOIR */}
+      {codenoirData && (
+        <CodeNoirOperationCard
+          operation={codenoirData}
           onPendingCtaClick={handlePendingCtaClick}
         />
       )}
 
       {/* System Transition Divider */}
       <div className="tactical-rule" style={{ margin: "var(--space-12) 0" }}>
-        <span className="tactical-rule-label" style={{ color: "var(--color-intelligence)" }}>
-          OPERATION TRANSITION // AUTOMATION (ORANGE) → DEFENSE (CYAN)
+        <span className="tactical-rule-label" style={{ color: "var(--color-threat)" }}>
+          OPERATION TRANSITION // CODE INTELLIGENCE (RED) → DEFENSIVE SOC (CYAN)
         </span>
       </div>
 
@@ -115,6 +117,21 @@ export const OperationsSection: React.FC = () => {
       {sentinelData && (
         <SentinelOperationCard
           operation={sentinelData}
+          onPendingCtaClick={handlePendingCtaClick}
+        />
+      )}
+
+      {/* System Transition Divider */}
+      <div className="tactical-rule" style={{ margin: "var(--space-12) 0" }}>
+        <span className="tactical-rule-label" style={{ color: "var(--color-accent)" }}>
+          OPERATION TRANSITION // DEFENSIVE SOC (CYAN) → AGENTIC AUTOMATION (ORANGE)
+        </span>
+      </div>
+
+      {/* Flagship Operation 03: JARVIS */}
+      {jarvisData && (
+        <JarvisOperationCard
+          operation={jarvisData}
           onPendingCtaClick={handlePendingCtaClick}
         />
       )}

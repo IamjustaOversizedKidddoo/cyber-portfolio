@@ -35,7 +35,7 @@ export const ClearanceSection: React.FC = () => {
   return (
     <section ref={sectionRef} id="clearance" style={{ scrollMarginTop: "100px", position: "relative", overflow: "hidden" }}>
       {/* Oversized Chapter Watermark */}
-      <div className="chapter-watermark" aria-hidden="true">05</div>
+      <div className="chapter-watermark" aria-hidden="true">06</div>
 
       {/* Chapter Tag Header */}
       <div
@@ -54,7 +54,7 @@ export const ClearanceSection: React.FC = () => {
         }}
       >
         <ShieldCheck size={14} />
-        <span>CH. 05 // CLEARANCE</span>
+        <span>CH. 06 // CLEARANCE</span>
         <span style={{ color: "var(--color-surface-border)" }}>|</span>
         <span style={{ color: "var(--color-text-muted)" }}>CERTIFICATIONS & PROFESSIONAL PROOF</span>
       </div>
